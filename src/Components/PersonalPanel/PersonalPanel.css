@@ -1,0 +1,12 @@
+.PersonalPanel {
+    background: #F5F5F5;
+}
+
+.PersonalPanel img {
+    max-width: 90px;
+}
+
+.PersonalPanelName {
+    text-align: center;
+    font-size: 25px;
+}

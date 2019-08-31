@@ -1,0 +1,44 @@
+.DatePicker {
+    margin: 0.6rem
+}
+
+.DatePicker .DatePickerIcon {
+    cursor: pointer;
+}
+
+.DatePicker .DatePickerIcon svg {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.DatePicker .DatePickerText {
+    font-size: 2.1rem;
+    color: white;
+}
+
+.DatePickerMobile {
+    margin: 1rem
+}
+
+.DatePickerMobile .DatePickerIcon {
+    cursor: pointer;
+}
+
+.DatePickerMobile .DatePickerIcon svg {
+    font-size: 1.2rem;
+    color: #6200ee;
+}
+
+.DatePickerMobile .DatePickerText {
+    font-size: 1.35rem;
+    color: #212121;
+    font-weight: bold;
+}
+
+.DatePickerIconDisabled svg {
+    color: #bebdf7!important;
+}
+
+.DatePickerIconDisabled {
+    cursor: default!important;
+}
