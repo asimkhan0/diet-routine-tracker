@@ -21,10 +21,13 @@ class ListBranded extends Component {
                     })
                 }
                 {
-                    (this.props.branded.length === 0) &&
-                    <div className="ListBrandedNoElement noselect">
-                        No items found.
-                    </div>
+                    (this.props.searchText.length === 0) ?
+                        <div className="ListBrandedNoElement noselect">
+                            Please input your search
+                    </div> : (this.props.branded.length === 0) ?
+                            <div className="ListBrandedNoElement noselect">
+                                No items found.
+                    </div> : null
                 }
             </div>
         );
@@ -33,7 +36,8 @@ class ListBranded extends Component {
 
 function mapStateToProps(state, props) {
     return {
-        branded: state.general.branded
+        branded: state.general.branded,
+        searchText: state.general.searchText
     }
 }
 

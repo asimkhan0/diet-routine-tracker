@@ -23,10 +23,13 @@ class ListCommon extends Component {
                     })
                 }
                 {
-                    (this.props.common.length === 0) &&
-                    <div className="ListCommonNoElement noselect">
-                        No items found.
-                    </div>
+                    (this.props.searchText.length === 0) ?
+                        <div className="ListCommonNoElement noselect">
+                            Please input your search
+                    </div> : (this.props.common.length === 0) ?
+                            <div className="ListCommonNoElement noselect">
+                                No items found.
+                    </div> : null
                 }
             </div>
         );
@@ -35,7 +38,8 @@ class ListCommon extends Component {
 
 function mapStateToProps(state, props) {
     return {
-        common: state.general.common
+        common: state.general.common,
+        searchText: state.general.searchText
     }
 }
 
